@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@keyframes floatShield {
+  0%,
+  100% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-54%);
+  }
+}
