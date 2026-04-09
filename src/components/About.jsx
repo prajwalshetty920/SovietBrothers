@@ -28,7 +28,7 @@ function About() {
   return (
     <Section id="about" className="py-28 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* LEFT CONTENT */}
 
           <div>
@@ -124,7 +124,7 @@ function About() {
 
           {/* RIGHT HIGHLIGHTS */}
 
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
             {highlights.map((h) => (
               <div
                 key={h.title}

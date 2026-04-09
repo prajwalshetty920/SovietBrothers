@@ -181,7 +181,7 @@ function Courses() {
 
         {/* Grid */}
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {courses.map((c) => (
             <div
               key={c.title}
@@ -258,7 +258,7 @@ function Courses() {
 
               {/* Content */}
 
-              <div className="p-7 flex flex-col flex-1">
+              <div className="p-5 sm:p-6 lg:p-7 flex flex-col flex-1">
                 <h3
                   className="
                     font-bold

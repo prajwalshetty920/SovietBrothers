@@ -42,7 +42,7 @@ function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 ">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div
@@ -53,12 +53,12 @@ function Navbar() {
             <img
               src="/logo.jpeg"
               alt="Logo"
-              className="h-14 rounded-2xl w-auto object-contain"
+              className="h-10 sm:h-12 lg:h-14 rounded-2xl w-auto object-contain"
             />
-            <span className="font-black text-white text-sm lg:text-base tracking-tight leading-tight">
+            <span className="font-black text-white text-xs sm:text-sm lg:text-base tracking-tight leading-tight">
               Soviet<span className="text-blue-400">Brothers</span>
               <br />
-              <span className="text-xs font-medium text-gray-400 tracking-widest uppercase">
+              <span className="text-xs sm:text-xs lg:text-xs font-medium text-gray-400 tracking-widest uppercase">
                 CyberSecurity
               </span>
             </span>
@@ -102,7 +102,7 @@ function Navbar() {
 
           {/* Mobile */}
           <button
-            className="lg:hidden text-gray-400 hover:text-white p-2"
+            className="lg:hidden text-gray-400 hover:text-white p-2 "
             onClick={() => setOpen((o) => !o)}
           >
             <div
@@ -120,28 +120,22 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden transition-all duration-300 overflow-hidden ${open ? "max-h-96" : "max-h-0"}`}
+        className={`lg:hidden transition-all duration-300 overflow-hidden ${open ? "max-h-screen" : "max-h-0"}`}
       >
-        <div className="bg-gray-950/98 border-t border-blue-900/20 px-4 py-3 space-y-1">
+        <div className="bg-gray-950/98 border-t border-blue-900/20 px-4 py-4 space-y-2 max-h-96 overflow-y-auto">
           {links.map((l) => (
             <button
               key={l}
               onClick={() => scrollTo(l)}
-              className="w-full text-left px-4 py-2 text-sm text-gray-400 hover:text-blue-400 hover:bg-blue-950/30 rounded transition-all uppercase tracking-widest"
+              className="w-full text-left px-4 py-3 text-sm text-gray-400 hover:text-blue-400 hover:bg-blue-950/30 rounded-lg transition-all uppercase tracking-widest min-h-11 touch-manipulation"
             >
               {l === "join" ? "Join Us" : l}
             </button>
           ))}
-          <div className="flex gap-2 pt-2">
-            {/* <button
-              onClick={() => setDark((d) => !d)}
-              className="flex-1 py-2 border border-blue-900/40 rounded text-gray-400 text-sm"
-            >
-              {dark ? "Light" : "Dark"}
-            </button> */}
+          <div className="flex gap-2 pt-4">
             <button
               onClick={() => scrollTo("contact")}
-              className="flex-1 py-2 bg-blue-600 rounded text-white text-sm font-bold"
+              className="flex-1 py-3 bg-blue-600 rounded-lg text-white text-sm font-bold min-h-11 touch-manipulation hover:bg-blue-500 transition-colors"
             >
               Get Started
             </button>

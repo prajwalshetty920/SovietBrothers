@@ -169,7 +169,7 @@ function Contact() {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Side */}
 
           <div>
@@ -202,7 +202,7 @@ function Contact() {
 
           {/* Right Side Form */}
 
-          <div className="p-8 rounded-2xl border border-blue-900/30 bg-gray-900/50 backdrop-blur-sm">
+          <div className="p-6 sm:p-8 rounded-2xl border border-blue-900/30 bg-gray-900/50 backdrop-blur-sm">
             {submitted ? (
               <div className="flex flex-col items-center justify-center text-center py-12">
                 <FaShieldAlt size={64} className="text-blue-400" />
