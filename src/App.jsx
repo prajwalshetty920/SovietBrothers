@@ -11,6 +11,7 @@ import Events from "./components/Events";
 import Courses from "./components/Courses";
 import Services from "./components/Services";
 import Navbar from "./components/Navbar";
+import FounderCard from "./components/Foundercard";
 
 /* ─── App ─── */
 export default function App() {
@@ -29,10 +30,13 @@ export default function App() {
       <Navbar />
       <Hero />
       <About />
+
       <Services />
       <Courses />
+      <FounderCard />
       <Events />
       <Blog />
+
       <Contact />
       <JoinUs />
       <CTA />

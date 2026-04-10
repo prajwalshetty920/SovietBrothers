@@ -104,6 +104,7 @@
 // export default Courses;
 
 import Section from "./Section";
+
 import {
   FaClock,
   FaArrowRight,
@@ -114,39 +115,28 @@ import {
 function Courses() {
   const courses = [
     {
-      title: "Ethical Hacking",
-      level: "Advanced",
-      duration: "12 Weeks",
-      desc: "Master penetration testing methodologies, tools, and real-world attack techniques used by security professionals.",
-      color: "from-blue-600 to-blue-800",
-    },
-    {
-      title: "Cyber Security Fundamentals",
+      title: "Ethical Hacking Basics ",
       level: "Beginner",
-      duration: "8 Weeks",
-      desc: "Build a solid foundation in cybersecurity concepts, threat landscape, and defensive strategies.",
+      duration: "4 Weeks",
+      desc: "Learn cybersecurity basics, online safety, cyber attack awareness, and digital protection skills for beginners and families.",
+      color: "from-blue-600 to-blue-800",
+      link: "https://topmate.io/sovietbrother/2041233?utm_source=public_profile&utm_campaign=sovietbrother",
+    },
+    {
+      title: "Network Security",
+      level: "Beginner",
+      duration: "4 Weeks",
+      desc: "Learn network security fundamentals, common attacks, and practical methods to protect networks, Wi-Fi, and connected devices.",
       color: "from-cyan-600 to-blue-700",
+      link: "https://topmate.io/sovietbrother/2041256?utm_source=public_profile&utm_campaign=sovietbrother",
     },
     {
-      title: "Network Security Training",
-      level: "Intermediate",
-      duration: "10 Weeks",
-      desc: "Deep dive into network protocols, firewall configuration, VPNs, and advanced network defense techniques.",
-      color: "from-indigo-600 to-blue-700",
-    },
-    {
-      title: "Penetration Testing Course",
+      title: "Advanced Cybersecurity",
       level: "Advanced",
-      duration: "14 Weeks",
-      desc: "Comprehensive course covering web, mobile, and network penetration testing with hands-on labs.",
-      color: "from-blue-700 to-cyan-700",
-    },
-    {
-      title: "SOC Analyst Training",
-      level: "Intermediate",
       duration: "10 Weeks",
-      desc: "Train to become a Security Operations Center analyst—threat hunting, SIEM, incident response.",
-      color: "from-sky-600 to-blue-700",
+      desc: "Master ethical hacking, penetration testing, threat detection, and cyber defense with real-world advanced cybersecurity skills.",
+      color: "from-indigo-600 to-blue-700",
+      link: "https://topmate.io/sovietbrother/2041268?utm_source=public_profile&utm_campaign=sovietbrother",
     },
   ];
 
@@ -297,6 +287,7 @@ function Courses() {
                   </div>
 
                   <button
+                    onClick={() => window.open(c.link, "_blank")}
                     className="
                       px-5
                       py-2.5
@@ -328,6 +319,72 @@ function Courses() {
             </div>
           ))}
         </div>
+
+        {/*  */}
+        <div className="mt-16 flex justify-center">
+          <button
+            onClick={() =>
+              window.open("https://topmate.io/sovietbrother", "_blank")
+            }
+            className="
+      group
+      relative
+      px-9
+      py-3.5
+      rounded-xl
+      font-bold
+      text-sm
+      uppercase
+      tracking-widest
+      text-white
+      bg-gradient-to-r
+      from-blue-600
+      via-cyan-500
+      to-blue-600
+      shadow-lg
+      shadow-blue-900/40
+      transition-all
+      duration-300
+      hover:scale-105
+      hover:shadow-xl
+      hover:shadow-cyan-900/50
+      flex
+      items-center
+      gap-3
+      overflow-hidden
+    "
+          >
+            {/* Glow layer */}
+            <span
+              className="
+        absolute
+        inset-0
+        opacity-0
+        group-hover:opacity-100
+        transition-opacity
+        duration-300
+        bg-gradient-to-r
+        from-blue-500/20
+        via-cyan-400/20
+        to-blue-500/20
+      "
+            />
+
+            {/* Text */}
+            <span className="relative">Visit Our Store</span>
+
+            {/* Arrow */}
+            <FaArrowRight
+              className="
+        relative
+        transition-transform
+        duration-300
+        group-hover:translate-x-1
+      "
+            />
+          </button>
+        </div>
+        {/*  */}
       </div>
     </Section>
   );

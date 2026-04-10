@@ -3,17 +3,33 @@ function Footer() {
     Services: [
       "Network Security",
       "Pen Testing",
-      "Cloud Security",
+      "Vulnerability Assessment",
       "Risk Management",
+      "Web App Security",
+      "Cyber Risk Management",
     ],
-    Courses: [
-      "Ethical Hacking",
-      "SOC Training",
-      "Pen Testing Course",
-      "Security Fundamentals",
-    ],
+    Courses: ["Ethical Hacking", "Network Security", "Advanced Cybersecurity"],
     Company: ["About Us", "Blog", "Events", "Careers"],
   };
+  const socials = [
+    {
+      key: "in",
+      link: "https://linkedin.com",
+    },
+    {
+      key: "gh",
+      link: "https://github.com/prajwalshetty920",
+    },
+
+    {
+      key: "yt",
+      link: "https://www.youtube.com/@SovietBrotherskannada",
+    },
+    {
+      key: "wa",
+      link: "https://whatsapp.com/channel/0029Vb7OAhOEVccNNbc7fi1f",
+    },
+  ];
   return (
     <footer className="border-t border-blue-900/20 bg-gray-950 py-16 px-6">
       <div className="max-w-7xl mx-auto">
@@ -37,13 +53,27 @@ function Footer() {
               solutions since 2019.
             </p>
             <div className="flex gap-3">
-              {["in", "gh", "tw", "yt"].map((s) => (
+              {socials.map((s) => (
                 <button
-                  key={s}
-                  className="w-9 h-9 rounded-lg border border-blue-900/40 text-gray-600 hover:text-blue-400 hover:border-blue-500/50
-                  transition-all font-mono text-xs font-bold hover:bg-blue-950/30"
+                  key={s.key}
+                  onClick={() => window.open(s.link, "_blank")}
+                  className="
+      w-9
+      h-9
+      rounded-lg
+      border
+      border-blue-900/40
+      text-gray-600
+      hover:text-blue-400
+      hover:border-blue-500/50
+      transition-all
+      font-mono
+      text-xs
+      font-bold
+      hover:bg-blue-950/30
+    "
                 >
-                  {s}
+                  {s.key}
                 </button>
               ))}
             </div>

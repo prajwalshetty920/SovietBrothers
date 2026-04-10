@@ -318,18 +318,14 @@ function Contact() {
 
                 {/* attachements  */}
                 <div className="relative">
-                  <input
+                  {/* <input
                     type="file"
                     name="attachment"
                     accept=".pdf,.doc,.docx,.png,.jpg,.jpeg"
                     onChange={(e) => setFile(e.target.files[0])}
                     className="w-full px-4 py-3 bg-gray-900/80 border border-blue-900/40 rounded-xl text-white text-sm
     hover:border-blue-700/40 transition-all"
-                  />
-
-                  <p className="text-xs text-gray-500 mt-1">
-                    Optional: Upload file (PDF, Image, Resume)
-                  </p>
+                  /> */}
                 </div>
                 {/*attachements  */}
 
@@ -349,6 +345,60 @@ function Contact() {
                 </button>
               </form>
             )}
+            <div className="mt-6 space-y-3">
+              {/* Divider */}
+              <div className="flex items-center gap-3">
+                <div className="flex-1 h-px bg-gray-800"></div>
+                <span className="text-xs text-gray-500 uppercase tracking-wider">
+                  Or
+                </span>
+                <div className="flex-1 h-px bg-gray-800"></div>
+              </div>
+
+              {/* Helper Text */}
+              <p className="text-xs text-gray-400 text-center">
+                Prefer email? You can send your documents directly to our
+                official email.
+              </p>
+
+              {/* Email Button */}
+              <button
+                onClick={() =>
+                  (window.location.href =
+                    "mailto:sovietbrothers.official@gmail.com?subject=Sending Documents&body=Hello, I am sending my CV/Resume and documents.")
+                }
+                className="
+                w-full
+                px-4
+                py-3
+                rounded-xl
+                border
+                border-blue-900/40
+                bg-gradient-to-r
+                from-gray-900/80
+                to-gray-800/80
+                text-white
+                text-sm
+                font-medium
+                tracking-wide
+                transition-all
+                duration-300
+                hover:border-blue-600
+                hover:bg-blue-600/10
+                hover:shadow-lg
+                hover:shadow-blue-900/30
+                active:scale-[0.98]
+                flex
+                items-center
+                justify-center
+                gap-2
+                cursor-pointer
+               "
+              >
+                <FaEnvelope className="text-blue-400" />
+                Send documents via Email (CV/Resume)
+              </button>
+            </div>
           </div>
         </div>
       </div>
