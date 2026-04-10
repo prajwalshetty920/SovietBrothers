@@ -150,7 +150,7 @@ function FounderCard() {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/prajwal-mm-79345a402/"
                   target="_blank"
                   className="social-btn hover:bg-blue-700"
                 >
@@ -159,7 +159,7 @@ function FounderCard() {
 
                 {/* Website */}
                 <a
-                  href="https://topmate.io/sovietbrother"
+                  href="https://topmate.io/sovietbrothers"
                   target="_blank"
                   className="social-btn hover:bg-cyan-600"
                 >

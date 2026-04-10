@@ -120,7 +120,7 @@ function Courses() {
       duration: "4 Weeks",
       desc: "Learn cybersecurity basics, online safety, cyber attack awareness, and digital protection skills for beginners and families.",
       color: "from-blue-600 to-blue-800",
-      link: "https://topmate.io/sovietbrother/2041233?utm_source=public_profile&utm_campaign=sovietbrother",
+      link: "https://topmate.io/sovietbrothers/2041233?utm_source=public_profile&utm_campaign=sovietbrother",
     },
     {
       title: "Network Security",
@@ -128,7 +128,7 @@ function Courses() {
       duration: "4 Weeks",
       desc: "Learn network security fundamentals, common attacks, and practical methods to protect networks, Wi-Fi, and connected devices.",
       color: "from-cyan-600 to-blue-700",
-      link: "https://topmate.io/sovietbrother/2041256?utm_source=public_profile&utm_campaign=sovietbrother",
+      link: "https://topmate.io/sovietbrothers/2041256?utm_source=public_profile&utm_campaign=sovietbrother",
     },
     {
       title: "Advanced Cybersecurity",
@@ -136,7 +136,7 @@ function Courses() {
       duration: "10 Weeks",
       desc: "Master ethical hacking, penetration testing, threat detection, and cyber defense with real-world advanced cybersecurity skills.",
       color: "from-indigo-600 to-blue-700",
-      link: "https://topmate.io/sovietbrother/2041268?utm_source=public_profile&utm_campaign=sovietbrother",
+      link: "https://topmate.io/sovietbrothers/2041268?utm_source=public_profile&utm_campaign=sovietbrother",
     },
   ];
 

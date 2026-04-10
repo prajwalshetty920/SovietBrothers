@@ -374,7 +374,7 @@ function Contact() {
                 rounded-xl
                 border
                 border-blue-900/40
-                bg-gradient-to-r
+                bg-linear-to-r
                 from-gray-900/80
                 to-gray-800/80
                 text-white

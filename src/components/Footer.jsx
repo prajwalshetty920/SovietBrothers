@@ -14,7 +14,7 @@ function Footer() {
   const socials = [
     {
       key: "in",
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/prajwal-mm-79345a402/",
     },
     {
       key: "gh",
