@@ -12,6 +12,7 @@ import Courses from "./components/Courses";
 import Services from "./components/Services";
 import Navbar from "./components/Navbar";
 import FounderCard from "./components/Foundercard";
+import CustomCursor from "./components/CustomCursor";
 
 /* ─── App ─── */
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet"
       />
+      <CustomCursor />
       <Navbar />
       <Hero />
       <About />
