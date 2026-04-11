@@ -18,3 +18,35 @@ body {
   color: #93c5fd;
   transition: all 0.3s ease;
 }
+
+/* Chrome, Edge, Safari */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00aaff, #0088cc);
+  border-radius: 10px;
+  border: 2px solid #020617;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00e0ff, #0095dd);
+
+  box-shadow:
+    0 0 10px #00aaff66,
+    0 0 20px #00aaff33;
+}
+
+/* Firefox */
+
+* {
+  scrollbar-width: thick;
+  scrollbar-color: #00aaff #020617;
+}
