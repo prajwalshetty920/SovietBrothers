@@ -20,8 +20,8 @@ function About() {
     },
     {
       icon: <FaGlobe className="text-green-400" size={28} />,
-      title: "500+ Clients",
-      desc: "Trusted by companies across 30+ countries",
+      title: "1000+ Students",
+      desc: "Trained Over 1000+ Students",
     },
   ];
 

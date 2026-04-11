@@ -163,7 +163,7 @@ function Contact() {
 
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
             Get In{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400">
               Touch
             </span>
           </h2>
@@ -315,19 +315,6 @@ function Contact() {
                     </p>
                   )}
                 </div>
-
-                {/* attachements  */}
-                <div className="relative">
-                  {/* <input
-                    type="file"
-                    name="attachment"
-                    accept=".pdf,.doc,.docx,.png,.jpg,.jpeg"
-                    onChange={(e) => setFile(e.target.files[0])}
-                    className="w-full px-4 py-3 bg-gray-900/80 border border-blue-900/40 rounded-xl text-white text-sm
-    hover:border-blue-700/40 transition-all"
-                  /> */}
-                </div>
-                {/*attachements  */}
 
                 {/* Submit */}
 
